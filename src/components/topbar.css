@@ -47,3 +47,28 @@
 .enroll-btn:hover {
   background-color: #e6e6e6;
 }
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .topbar .contact {
+    font-size: 0.55rem; /* smaller text */
+  }
+
+  .topbar .topbar-left .contact {
+    display: inline-flex; /* makes phone & email horizontal */
+    font-size: 0.55rem; /* same smaller font */
+  }
+
+  .topbar .contact svg {
+    font-size: 0.9rem; /* smaller icons */
+  }
+  .topbar .topbar-left .contact:nth-of-type(2) {
+    display: none;
+  }
+
+  .topbar .enroll-btn {
+    font-size: 0.55rem; /* smaller button text */
+    padding: 4px 8px; /* smaller button */
+    /* border-radius: 3px; /* adjust corners */
+  }
+}
