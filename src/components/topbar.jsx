@@ -8,11 +8,11 @@ function TopBar() {
     <div className="topbar">
       <div className="topbar-left">
         <span className="divider">|</span>
-        <span className="contact">
+        <span className="contact phone">
           <BsFillTelephoneFill /> +27 82 714 2399
         </span>
 
-        <span className="contact">
+        <span className="contact email">
           <MdOutlineEmail /> latiroswimmingacademy@gmail.com
         </span>
       </div>
