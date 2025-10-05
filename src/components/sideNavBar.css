@@ -6,6 +6,15 @@
   gap: 20px; /* space between links */
 }
 
+.sidenavbar li a {
+  all: unset; /* resets all inherited and browser styles */
+  display: block; /* ensures the link fills the li for background hover */
+  padding: 5px 10px; /* spacing inside the link */
+  cursor: pointer; /* pointer on hover */
+  color: #003366; /* your desired text color */
+  text-decoration: none; /* remove underline */
+}
+
 .sidenavbar ul {
   list-style: none;
   padding: 0;
@@ -25,8 +34,8 @@
 }
 
 /*This is for the highlight or the blue background of the navigation*/
-.sidenavbar li:hover,
-.sidenavbar li.active {
+.sidenavbar li a:hover,
+.sidenavbar li a.active {
   background-color: #003366; /* blue highlight */
   color: white; /* white text */
   padding: 5px 10px;
