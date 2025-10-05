@@ -1,0 +1,76 @@
+.sidenavbar {
+  margin-top: 10px; /* below topbar */
+  padding: 10px 30px;
+  display: flex; /* horizontal layout */
+  justify-content: flex-end; /* align to right */
+  gap: 20px; /* space between links */
+}
+
+.sidenavbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* horizontal layout */
+  gap: 30px; /* spacing between items */
+}
+
+.sidenavbar li {
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: #003366; /* match theme */
+}
+
+.sidenavbar li:hover {
+  color: #0077b6;
+}
+
+/*This is for the highlight or the blue background of the navigation*/
+.sidenavbar li:hover,
+.sidenavbar li.active {
+  background-color: #003366; /* blue highlight */
+  color: white; /* white text */
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+/*End*/
+
+/* Hamburger icon (hidden on desktop) */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: #003366;
+  cursor: pointer;
+}
+
+/* --- Mobile view --- */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .sidenavbar ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    background: #003366;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .sidenavbar ul.open {
+    display: flex;
+  }
+
+  .sidenavbar li {
+    color: white;
+  }
+
+  .sidenavbar li:hover {
+    background: yellow;
+    color: black;
+  }
+}
+/*End*/
