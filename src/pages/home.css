@@ -4,7 +4,7 @@
 }
 
 .welcome-text {
-  font-family: "Cursive", sans-serif;
+  font-family: "Cursive";
   font-size: 2.5rem;
   color: #003366; /* make sure it contrasts with background */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);

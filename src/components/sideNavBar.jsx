@@ -6,6 +6,8 @@ import { FaBars } from "react-icons/fa";
 function SideNavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleLinkClick = () => setMenuOpen(false); // closes menu on click
+
   return (
     <div className="sidenavbar">
       <FaBars className="menu-icon" onClick={() => setMenuOpen(!menuOpen)} />
@@ -13,6 +15,7 @@ function SideNavBar() {
         <li>
           <NavLink
             to="/"
+            onClick={handleLinkClick}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Home
@@ -21,6 +24,7 @@ function SideNavBar() {
         <li>
           <NavLink
             to="/about"
+            onClick={handleLinkClick}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             About Us
@@ -29,6 +33,7 @@ function SideNavBar() {
         <li>
           <NavLink
             to="/prices"
+            onClick={handleLinkClick}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Prices
@@ -37,6 +42,7 @@ function SideNavBar() {
         <li>
           <NavLink
             to="/contact"
+            onClick={handleLinkClick}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Contact Us

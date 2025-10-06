@@ -73,13 +73,22 @@
     display: flex;
   }
 
-  .sidenavbar li {
-    color: white;
+  .sidenavbar ul li a {
+    color: white !important;
   }
 
-  .sidenavbar li:hover {
-    background: yellow;
-    color: black;
+  /*.sidenavbar ul li {
+    color: white;
+  }*/
+
+  .sidenavbar ul li a:hover,
+  .sidenavbar ul li a.active {
+    background: #ffd700; /* same yellow as your Enrol Now button */
+    color: black !important; /* black text for contrast */
+  }
+
+  .menu-icon {
+    display: block;
   }
 }
 /*End*/
