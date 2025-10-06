@@ -5,6 +5,12 @@ function Home() {
   return (
     <div className="home-container">
       <h1 className="welcome-text">Welcome to Latiro Swimming Academy</h1>
+
+      <div className="carousel-test-wrapper">
+        <div className="carousel-test-container">
+          <p>Carousel Area Preview</p>
+        </div>
+      </div>
     </div>
   );
 }

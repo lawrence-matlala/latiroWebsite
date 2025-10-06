@@ -6,22 +6,6 @@ import Home from "./pages/home.jsx";
 import About from "./pages/about.jsx";
 import Prices from "./pages/prices.jsx";
 import Contact from "./pages/contact.jsx";
-/*
-function App() {
-  return (
-    <Router>
-      <TopBar />
-      <SideNavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/prices" element={<Prices />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
-  );
-}
-*/
 
 export default function App() {
   return (
