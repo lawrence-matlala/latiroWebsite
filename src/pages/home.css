@@ -42,3 +42,13 @@
 }
 
 /*End*/
+
+/*Make images fit the Container*/
+.carousel-test-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures it fills the container without distortion */
+  border-radius: 10px; /* match container */
+}
+
+/*End*/
