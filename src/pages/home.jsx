@@ -8,7 +8,11 @@ function Home() {
 
       <div className="carousel-test-wrapper">
         <div className="carousel-test-container">
-          <p>Carousel Area Preview</p>
+          <img
+            src={`${import.meta.env.BASE_URL}images/lat1.jpeg`}
+            alt="Carousel preview"
+            className="carousel-test-image"
+          />
         </div>
       </div>
     </div>
