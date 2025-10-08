@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
+import "./carousel.css";
 const latImage1 = `${import.meta.env.BASE_URL}images/lat1.jpeg`;
 const latImage2 = `${import.meta.env.BASE_URL}images/lat2.jpeg`;
 const latImage3 = `${import.meta.env.BASE_URL}images/lat3.jpeg`;
@@ -12,16 +13,16 @@ function Carousel() {
   const [imageIndex, setImageIndex] = useState(0);
 
   return (
-    <div style={{ width: "100%", height: "100%" }}>
+    <div style={{ width: "100%", height: "100%", position: "relative" }}>
       <img
         src={carouselImages[imageIndex]}
         alt="carousel"
         className="carousel-test-image"
       />
-      <button>
+      <button className="img-slider-btn" style={{ left: 0 }}>
         <ArrowBigLeft />
       </button>
-      <button>
+      <button className="img-slider-btn" style={{ right: 0 }}>
         <ArrowBigRight />
       </button>
     </div>
