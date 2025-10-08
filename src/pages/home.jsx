@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./home.css";
+import Carousel from "../components/carousel.jsx";
 
 function Home() {
   return (
@@ -8,11 +9,7 @@ function Home() {
 
       <div className="carousel-test-wrapper">
         <div className="carousel-test-container">
-          <img
-            src={`${import.meta.env.BASE_URL}images/lat1.jpeg`}
-            alt="Carousel preview"
-            className="carousel-test-image"
-          />
+          <Carousel />
         </div>
       </div>
     </div>

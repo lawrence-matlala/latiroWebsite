@@ -30,6 +30,8 @@
   color: #003366;
   font-weight: bold;
   text-transform: uppercase;
+  overflow: hidden; /* IMPORTANT: clip any overflow */
+  position: relative;
 }
 
 /* --- Mobile --- */
@@ -49,6 +51,7 @@
   height: 100%;
   object-fit: cover; /* ensures it fills the container without distortion */
   border-radius: 10px; /* match container */
+  display: block; /* removes baseline gap */
 }
 
 /*End*/
